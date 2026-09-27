@@ -23,6 +23,7 @@ rand = "0.8.5"
 statrs = "0.16"
 signal-hook = "0.3.17"
 md5 = "0.7"
+serde_json = "1.0"
 tquic = { path = "..", version = "1.5.0"}
 
 [target."cfg(unix)".dependencies]
@@ -39,3 +40,7 @@ path="src/bin/tquic_client.rs"
 [[bin]]
 name="tquic_server"
 path="src/bin/tquic_server.rs"
+
+[[bin]]
+name="tquic_mpsim"
+path="src/bin/tquic_mpsim.rs"
